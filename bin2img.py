@@ -28,5 +28,3 @@ def binary_to_image(inputPath, width, height, outputPath):
         image.save(outputPath, 'PNG')
     except Exception as e:
         print(e)
-        
-binary_to_image(r'F:/out/file9643_gami_criminal_sac_072x072.raw', 72, 72, r'F:/out/test.png')
