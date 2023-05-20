@@ -16,5 +16,5 @@ for file in files:
             print(dimensions + " " + "W: " + str(width) + " H: " + str(height))
             binary_to_image(file_path, width, height, output_path + file_name)
             print(file)
-        except ValueError:
-            print(ValueError)
+        except Exception as e:
+            print(e)

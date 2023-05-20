@@ -26,5 +26,7 @@ def binary_to_image(inputPath, width, height, outputPath):
         image = Image.new('RGB', (width, height))
         image.putdata(pixel_data)
         image.save(outputPath, 'PNG')
-    except TypeError:
-        print(TypeError)
+    except Exception as e:
+        print(e)
+        
+binary_to_image(r'F:/out/file9643_gami_criminal_sac_072x072.raw', 72, 72, r'F:/out/test.png')
